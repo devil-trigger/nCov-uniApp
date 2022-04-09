@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "nCov"
+			}
+		},{
+            "path" : "pages/global/global",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "国际疫情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "疫情新闻",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "nCov",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus":{
+			"titleNView":false
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#42b983",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabBarIcon/CN.png",
+			"selectedIconPath": "static/tabBarIcon/CN-s.png",
+			"text": "国内疫情"
+		}, {
+			"pagePath": "pages/global/global",
+			"iconPath": "static/tabBarIcon/glb.png",
+			"selectedIconPath": "static/tabBarIcon/glb-s.png",
+			"text": "国际疫情"
+		},
+		{
+			"pagePath": "pages/news/news",
+			"iconPath": "static/tabBarIcon/NEW.png",
+			"selectedIconPath": "static/tabBarIcon/NEW-s.png",
+			"text": "疫情新闻"
+		}
+		]
+	}
+}
